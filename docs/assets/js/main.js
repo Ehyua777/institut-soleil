@@ -1,4 +1,4 @@
-const BASE_PATH = window.location.origin;
+const BASE_PATH = window.location.origin + "/docs/";
 async function loadComponent(id, file) {
 
     const response = await fetch(BASE_PATH + file);
