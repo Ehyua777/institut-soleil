@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#1E3A8A",
+                    accent: "#FBBF24"
+                },
+                fontFamily: {
+                    title: ["Montserrat", "sans-serif"],
+                    text: ["Open Sans", "sans-serif"]
+                }
+            }
+        }
+    }
+    </script>
     <title>Institut Soleil</title>
 </head>
 <body>
-    
+    <div id="navbar"></div>
+    <header></header>
+    <main></main>
+    <div id="footer"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
