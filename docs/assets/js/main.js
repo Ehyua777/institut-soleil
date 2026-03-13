@@ -1,4 +1,4 @@
-const BASE_PATH = window.location.origin;
+const BASE_PATH = window.location.origin+'/docs/';
 async function loadComponent(id, file) {
 
     const response = await fetch(BASE_PATH + file);
@@ -10,7 +10,7 @@ async function loadComponent(id, file) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    loadComponent("navbar", "/components/navbar.html");
-    loadComponent("footer", "/components/footer.html");
+    loadComponent("navbar", "components/navbar.html");
+    loadComponent("footer", "components/footer.html");
 
 });
